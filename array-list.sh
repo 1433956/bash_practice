@@ -8,4 +8,4 @@ echo "First Movie: ${MOVIES[4]}"
 
 echo "All movies*: ${MOVIES[*]}"
 echo "All movies @: ${MOVIES[@]}"
-echo "All movies%: ${MOVIES[%]}"
+echo "All movies%: ${MOVIES[&]}"
