@@ -1,0 +1,5 @@
+echo "Mama:: Hey alludu, How are you?"
+echo "alludu:: Hello Mama, I am fine. How are you doing"
+echo "Mama: I am fine too. What's up?"
+echo "alludu:: Nohting, just going to Mars now, will you come?"
+echo "Mama:: Sorry, you carry on! I will come once you come back"
