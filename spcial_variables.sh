@@ -2,7 +2,7 @@
 # Special Variables
 
 echo "variables are=" $@
-echo "variables are= " $#s
+echo "variables are= " $#
 echo "script name is=" $0
 echo "pid of the script=" $$
  sleep 5 &
