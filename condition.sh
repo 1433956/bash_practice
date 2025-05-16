@@ -7,7 +7,7 @@ age=$1
 # -ne is notEqualTo
 # -ge is greaterThanEqualTo
 # -le is lessThanEqualTo
-if [ $age >= 19 ]; 
+if [ $age -ge 19 ]; 
 then 
 echo "You are eligible to vote"
 else
