@@ -1,5 +1,17 @@
-echo "Mama:: Hey alludu, How are you?"
-echo "alludu:: Hello Mama, I am fine. How are you doing"
-echo "Mama: I am fine too. What's up?"
-echo "alludu:: Nohting, just going to Mars now, will you come?"
-echo "Mama:: Sorry, you carry on! I will come once you come back"
+#!/bin/bash
+#Condition
+age=$1
+# -gt is greterThan
+# -lt is lessThan
+# -eq is equalTo
+# -ne is notEqualTo
+# -ge is greaterThanEqualTo
+# -le is lessThanEqualTo
+if [ $age -ge 19 ]; 
+then 
+echo "You are eligible to vote"
+else
+echo "you are not eligible to vote"
+exit 1
+fi
+   
