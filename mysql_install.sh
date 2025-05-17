@@ -13,7 +13,7 @@ if [user  -eq 0 ]; then
 if [ $? -ne 0 ]; then
     echo "mysql is installed successfully"
     else
-    echo "mysql is not installed
+    echo "mysql is not installed"
     exit 1
  fi
    
