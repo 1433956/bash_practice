@@ -3,18 +3,20 @@ user=$(id -u)
 
 if [user  -eq 0 ]; then
     echo "You are root user"
-     dnf list installed | grep mysql
+    dnf list installed | grep mysql
     if [ $? -ne 0 ]; then
         dnf install mysql -y
     else
         echo "MySQL is already installed"
         exit 1
+        fi
 else 
      echo "you are not root user"
      exit 1
+     fi
     
 
- fi
+ 
 if [ $? -ne 0 ]; then
     echo "mysql is installed successfully"
     else
