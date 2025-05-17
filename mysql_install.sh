@@ -26,7 +26,7 @@ dnf install mysql -y
 # check if mysql is installed successfully
 if [ $? -eq 0 ] 
 then
-    echo "mysql is installed successfully"
+    echo "Babu,Garu! is installed successfully"
 else
     echo "mysql installation failed"
     exit 1
