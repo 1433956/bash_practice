@@ -3,7 +3,7 @@ user=$(id -u)
 
 if [user  -eq 0 ]; then
     echo "You are root user"
-    dnf list installed | grep mysql
+    dnf list installed mysql
     if [ $? -ne 0 ]; then
         dnf install mysql -y
     else
