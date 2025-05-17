@@ -9,6 +9,11 @@ if [user  -eq 0 ]; then
     else
         echo "MySQL is already installed"
         exit 1
+else 
+     echo "you are not root user"
+     exit 1
+    
+
  fi
 if [ $? -ne 0 ]; then
     echo "mysql is installed successfully"
@@ -16,8 +21,3 @@ if [ $? -ne 0 ]; then
     echo "mysql is not installed"
     exit 1
  fi
-   
-
-
-
-
