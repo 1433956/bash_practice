@@ -1,7 +1,5 @@
 #!/bin/bash
-
 user=$(id -u)
-
 
 if [user  -eq 0 ]; then
     echo "You are root user"
@@ -17,7 +15,7 @@ if [ $? -ne 0 ]; then
     else
     echo "mysql is not installed
     exit 1
-fi
+ fi
    
 
 
