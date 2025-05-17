@@ -21,15 +21,13 @@ if [ $? -eq 0 ] then
     exit 1
 else 
     echo "mysql is not installed"
-
-# install mysql
-dnf install mysql -y
 fi
-    if [$? -eq 0 ] then
-      echo "mysql is installed successfully"
-    else
-       echo "mysql installation failed"
-       exit 1
+dnf install mysql -y
+if [$? -eq 0 ] then
+    echo "mysql is installed successfully"
+else
+    echo "mysql installation failed"
+    exit 1
 fi
     
 
