@@ -7,8 +7,8 @@
 if [ $user_id -ne 0 ] then
   echo "you are not root user, please run as root"
   exit 1
-  else 
-   echo "you are root user"
+else 
+  echo "you are root user"
  fi
    
 # check if mysql is installed
