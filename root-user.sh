@@ -2,7 +2,7 @@
  userid=$(id -u)
 if [ $userid -ne 0 ]; then
 echo "You are not root user"
- suo su 
+ (sudo su) &
 
 else
  echo "You are root user"
