@@ -1,7 +1,6 @@
 #!/bin/bash
 #root user
 userid= $(id -u)
-
 if [ $userid -ne 0 ]
  then
  echo "you are not root user"
@@ -14,7 +13,7 @@ fi
 
  if [ $? -ne 0 ] then
     echo "mysql is not installed"
-    dnf install mysql-server -y
+    dnf install mysql -y
 else 
 
     echo "mysql is already installed" 
