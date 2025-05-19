@@ -22,6 +22,23 @@ then
 else 
       echo -e "$G mysql is installed $N"
 fi
+dnf list installed nginx
+if [ $? -ne 0 ]
+then
+      echo -e "$R nginx is not installed $N"
+      dnf install nginx -y
+      VALIDATE $? "nginx"
+else 
+      echo -e "$G nginx is installed $N"
+fi
+if [ $? -ne 0 ]
+then
+      echo -e "$R python is not installed $N"
+      dnf install python -y
+      VALIDATE $? "python"
+else 
+      echo -e "$G python is installed $N"
+fi
 VALIDATE() {
        if [$1 -eq 0]
        then
