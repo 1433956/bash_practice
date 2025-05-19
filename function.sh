@@ -25,7 +25,7 @@ validate_software() {
    
 #check user is a Root user
  userid=$(id -u)
-if [ $userid -eq 0]
+if [ $userid -eq 0 ]
 then
      echo "$userid is a root user"
 else  
@@ -34,7 +34,7 @@ else
 fi
 #mysql installation is sucess or not using function
 validate() {
- if [ $1 -eq 0]
+ if [ $1 -eq 0 ]
  then 
       echo "$2 installation is success"
  else 
@@ -46,7 +46,7 @@ validate() {
 
  #checking required software is installed  or not
 dnf list installed mysql
-if [ $? -ne 0]
+if [ $? -ne 0 ]
 then 
      echo " mysql is not installed"
 dnf install mysql -y
@@ -58,7 +58,7 @@ fi
 
 #checking required software is installed  or not
 dnf list installed python3
-if [ $? -ne 0]
+if [ $? -ne 0 ]
 then 
      echo " python is not installed"
 dnf install python3 -y
@@ -70,7 +70,7 @@ fi
 
 #checking required software is installed  or not
 dnf list installed nginx
-if [ $? -ne 0]
+if [ $? -ne 0 ]
 then 
      echo " nginx is not installed"
 dnf install nginx -y
