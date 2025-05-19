@@ -5,7 +5,7 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 Logs_folder="var/logs/bash-script"
-script_name=echo $( $0 | cut -d ".sh" -f1)
+script_name=$(echo $0 | cut -d ".sh" -f1)
 log_file="$Logs_folder/$script_name.log"
 mkdir -p $Logs_folder
 packages=("mysql" "python3" "nginx")
