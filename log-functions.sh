@@ -36,6 +36,6 @@ do
      dnf install $package -y
      VALIDATE_SOFTWARE $? $package
     else
-      echo -e "$F  $ package is installed $N" &>>$log_file
+      echo -e "$F  $package is installed $N" &>>$log_file
     fi
  done
