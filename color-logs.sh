@@ -12,5 +12,5 @@ userid=$(id -u)
       "
       exit 1
  else
-      echo -e $G You are root user $N"
+      echo -e $Y You are root user $N"
  fi
