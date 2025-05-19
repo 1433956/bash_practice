@@ -1,5 +1,4 @@
 #!/bin/bash
-<<<<<<< HEAD
 
 userid=$(id -u)
 
@@ -24,7 +23,6 @@ validate_software() {
 
 }
    
-=======
 #check user is a Root user
  userid=$(id -u)
 if [ $userid -eq 0]
@@ -85,4 +83,4 @@ fi
 
 
  
->>>>>>> 46b29099391a98d2df3963d3de343d0a06b4541c
+
