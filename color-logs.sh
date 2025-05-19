@@ -12,3 +12,23 @@ R="\e[31m"
  else
       echo -e "$G You are root user $N"
  fi
+#checking required software is installed  or not
+dnf list installed mysql
+if [ $? -ne 0 ]
+then
+      echo -e "$R mysql is not installed $N"
+      dnf install mysql -y
+      VALIDATE $? "mysql"
+else 
+      echo -e "$G mysql is installed $N"
+fi
+VALIDATE() {
+       if [$1 -eq 0]
+       then
+            echo -e "$G $2 is already installed $N"
+            exit 1
+       else
+            echo -e "$R $2 is not installed $N"
+       fi
+}
+
