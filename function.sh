@@ -9,40 +9,17 @@ then
 else
      echo "your are root user"
 fi 
-dnf list installed mmysql
+#checking required software is installed  or not
 validate_software() {
-     if [ $? -eq 0 ]
+     if [ $1 -eq 0 ]
      then
-          echo "mysql is already installed"
+          echo "$2 is already installed"
           exit 1
      else
-          echo "mysql is not installed"
+          echo "$2 is not installed"
      fi 
-
-
-
 }
    
-#check user is a Root user
- userid=$(id -u)
-if [ $userid -eq 0 ]
-then
-     echo "$userid is a root user"
-else  
-     echo "$userid is root User, Try to login as root User"
-     exit 1
-fi
-#mysql installation is sucess or not using function
-validate() {
- if [ $1 -eq 0 ]
- then 
-      echo "$2 installation is success"
- else 
-      echo "$2 installation is failure"
-      exit 1
- fi
-
-}
 
  #checking required software is installed  or not
 dnf list installed mysql
