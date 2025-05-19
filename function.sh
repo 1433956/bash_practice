@@ -30,7 +30,7 @@ dnf install mysql -y
 validate $? "mysql" 
 else
     echo "mysql is installed"
-    exit 1
+    
 fi
 
 #checking required software is installed  or not
@@ -42,7 +42,7 @@ dnf install python3 -y
 validate $? "python3" 
 else
     echo "python3 is installed"
-    exit 1
+    
 fi
 
 #checking required software is installed  or not
@@ -54,7 +54,7 @@ dnf install nginx -y
 validate $? "nginx" 
 else
     echo "nginx is installed"
-    exit 1
+    
 fi
 
 
