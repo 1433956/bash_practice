@@ -5,7 +5,7 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 Logs_folder="var/logs/bash-script"
-script_name=$(echo $0 | cut -d ".sh" -f1)
+script_name=$(echo $0 | cut -d "." -f1)
 log_file="$Logs_folder/$script_name.log"
 mkdir -p $Logs_folder
 packages=("mysql" "python3" "nginx")
@@ -20,7 +20,7 @@ fi
 VALIDATE_SOFTWARE() {
     if [ $1 -ne 0 ]
     then
-        echo -e "$G $2 is already installed $N" | &>> $log_file
+        echo -e "$G $2 is already installed $N" &>>$log_file
         exit 1
     else
         echo -e "$R $2 is not installed $N" | tee -a $log_file
