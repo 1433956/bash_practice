@@ -32,10 +32,10 @@ do
    dnf listed installed $package
    if [ $? -ne 0 ]
    then
-     echo -e "$R $package is not installed $N" |tee -a $log_file"
+     echo -e "$R $package is not installed $N" |tee -a $log_file
      dnf install $package -y
-     VALIDATE_SOFTWARE $? $package
+     VALIDATE_SOFTWARE $? "$package"
     else
-      echo -e "$G  $package is installed $N" &>>$log_file
+      echo -e "$G $package is installed $N" | tee -a $log_file
     fi
  done
