@@ -8,8 +8,8 @@ userid=$(id -u)
 
  if [ $userid -ne 0 ]
  then
-      echo -e "$R You are not root user $N"
+      echo -e " $R You are not root user $N "
       exit 1
  else
-      echo -e"$G You are root user $N"
+      echo -e" $G You are root user $N "
  fi
